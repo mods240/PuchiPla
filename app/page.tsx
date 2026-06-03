@@ -306,8 +306,13 @@ export default function Home() {
           <div style={{ fontWeight:'bold', fontSize:18 }}>🛍️ プチプラプラプラ</div>
           <div style={{ fontSize:11, opacity:0.85 }}>タップでエリア変更</div>
         </button>
-        <div style={{ fontSize:12, opacity:0.9 }}>
-          {loading ? '読込中...' : `${filteredStores.length}件`}
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <span style={{ fontSize:12, opacity:0.9 }}>
+            {loading ? '読込中...' : `${filteredStores.length}件`}
+          </span>
+          <a href="/about" style={{ fontSize:11, color:'rgba(255,255,255,0.85)', textDecoration:'none', border:'1px solid rgba(255,255,255,0.5)', borderRadius:10, padding:'2px 8px' }}>
+            ℹ️ about
+          </a>
         </div>
       </header>
 
