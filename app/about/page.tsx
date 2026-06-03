@@ -32,8 +32,10 @@ export default function AboutPage() {
         <h2 style={{ fontSize: 16, fontWeight: 'bold', color: '#333', marginBottom: 12 }}>🔗 関連アプリ</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
           {[
-            { name: '🐟 フィッシュタイム', desc: '近くの海鮮・魚介料理店を探す', url: 'https://fishtime.vercel.app' },
+            { name: '🐟 フィッシュタイム', desc: '近くの海鮮・魚介料理店を探す', url: 'https://fishtime-eight.vercel.app' },
             { name: '🥐 ゴパン', desc: '近くのパン屋さんを探す', url: 'https://gopan.vercel.app' },
+            { name: '🍜 ラララーメン', desc: '近くのラーメン店を探す', url: 'https://lalaramen.vercel.app' },
+            { name: '🐦 アーリーバード', desc: '近くの焼き鳥店を探す', url: 'https://earlybird-yakitori.vercel.app' },
             { name: '🚽 トイレマップ', desc: '近くの公共トイレを探す', url: 'https://toilet-kakekomi.vercel.app' },
           ].map(app => (
             <a key={app.url} href={app.url} target="_blank" rel="noopener noreferrer"
